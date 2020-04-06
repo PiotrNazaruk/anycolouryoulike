@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Contentful](https://www.contentful.com/)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) ,  [Contentful](https://www.contentful.com/) and [Netlify](https://www.netlify.com/)
 
 ## Available Scripts
 
