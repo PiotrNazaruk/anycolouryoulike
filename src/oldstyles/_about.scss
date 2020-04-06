@@ -1,0 +1,210 @@
+.about{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1001;
+    background: white;
+    @include small-phone{
+        height: 150vh;
+    }
+    @include phone-landscape{
+        height: 190vh;
+    }
+    @include tablet{
+        height: 50vh;
+    }
+    @include desktop{
+        height: 70vh;
+    }
+}
+.about__container{
+    height: 95%;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+}
+
+.about__content{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+    }
+    @include desktop{
+        flex-direction: row;
+    }
+
+
+}
+.about__photo{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include small-phone{
+        height: 25%;
+    }
+    @include phone-landscape{
+        height: 40%;
+    }
+    @include tablet{
+        height: 50%;
+        width: 30%;
+    }
+    @include desktop{
+        width: 30%;
+        height: 50%;
+        position: relative;
+        @include desktop{
+            &::before{
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: .1rem;
+                background: rgb(190, 186, 186);
+                right: -5%;
+                top: 0;
+            }
+        }
+        @include desktop-1440{
+            &::before{
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: .1rem;
+                background: rgb(190, 186, 186);
+                right: 0%;
+                top: 0;
+            }
+        }
+    }
+}
+.about__text{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+    @include small-phone{
+        height: 55%;
+    }
+    @include phone-landscape{
+        height: 35%;
+    }
+    @include tablet{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 60%;
+    }
+    @include desktop{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 60%;
+        
+    }
+    p{
+        font-size: 1.2rem;
+       
+      
+        @include desktop-1440{
+            font-size: 1.8rem;
+        }
+    }
+    
+}
+.text-second{
+    padding-top: 1rem;
+    @include desktop{
+        padding-top: 3rem;
+    }
+}
+
+////////////// offer download section //////////////////////
+.offer-details{
+    height: 60vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1001;
+    background: whitesmoke;
+   
+    &__container{
+        height: 60%;
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        @include tablet{
+            width: 50%;
+        }
+        @include desktop{
+            width: 25%;
+        }
+        @include desktop-1440{
+            width: 20%;
+        }
+        h2{
+            position: relative;
+            color: rgba(0, 0, 0, 0.842);
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: .1rem;
+                background: rgb(107, 104, 104);
+                bottom: -20%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        h3{
+            text-align: center;
+            line-height: 2rem;
+            color: rgba(0, 0, 0, 0.9);
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+    @include small-phone{
+        height: 70vh;
+    }
+    @include phone-landscape{
+        height: 100vh;
+    }
+    @include tablet{
+        height: 40vh;
+    }
+    @include desktop{
+        height: 40vh;
+    }
+}
+.button{
+    height: 4rem;
+    width: 12rem;
+    background: whitesmoke;
+    border: .1rem solid black;
+    &:hover{
+        background: rgba(0, 0, 0, 0.644);
+        color: white;
+    }
+}

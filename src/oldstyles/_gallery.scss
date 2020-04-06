@@ -1,0 +1,650 @@
+.gallery{
+    height: auto;
+    position: relative;
+    z-index: 1001;
+    background: white;
+    margin-top: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.gallery__container{
+    height: 90%;
+    width: 95%;
+    margin: 0 auto;
+   
+    padding-top: 5%;
+    padding-bottom: 5%;
+    overflow: hidden;
+    @include desktop{
+        width: 90%;
+        
+    }
+ 
+}
+.gallery__box{
+    height: 120vh;
+    grid-gap: 0.6rem;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(12, 1fr);
+   
+    @include phone-landscape{
+        height: 300vh;
+    }
+    @include tablet{
+        height: 100vh;
+    }
+    @include desktop{
+        height: 170vh;
+        grid-gap: 1rem;
+    }
+    
+  
+  
+
+}
+.gallery__box--second {
+   padding-top: 0.9rem;
+}
+.gallery__box--third {
+    padding-top: 0.9rem;
+}
+.gallery__box--fourth {
+    padding-top: 0.9rem;
+}
+.gallery__picture--no1{
+    background-image: url('/pictures/newPictures/768_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 3;
+    @include tablet{
+        grid-column: span 5;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 5;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no2{
+    background-image: url('/pictures/newPictures/768_02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 3;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no3{
+    background-image: url('/pictures/newPictures/768_03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 12;
+    grid-row: span 3;
+    background-position: 100%;
+    background-position-y: 100%;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+  
+    
+
+    
+}
+.gallery__picture--no4{
+    background-image: url('/pictures/newPictures/768_04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 7;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+
+.gallery__picture--no5{
+    background-image: url('/pictures/newPictures/768_05.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 5;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no6{
+    background-image: url('/pictures/newPictures/768_06.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 8;
+    grid-row: span 2;
+    background-origin: initial;
+    background-position-y: 100%;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no7{
+    background-image: url('/pictures/newPictures/768_07.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 4;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no8{
+    background-image: url('/pictures/768/L7A5754-HDR.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no9{
+    background-image: url('/pictures/768/L7A5718-HDR.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+        
+    }
+}
+
+.gallery__picture--no10{
+    background-image: url('/pictures/768/768_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 3;
+    background-position: 100%;
+    @include tablet{
+        grid-column: span 5;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 5;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no11{
+    background-image: url('/pictures/768/768_02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 3;
+    background-position: 100%;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no12{
+    background-image: url('/pictures/768/768_03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 12;
+    grid-row: span 3;
+    background-position-y: 100%;
+    background-position: 100%;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+  
+    
+
+    
+}
+.gallery__picture--no13{
+    background-image: url('/pictures/768/768_04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 7;
+    grid-row: span 2;
+    background-position: 100%;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+
+.gallery__picture--no14{
+    background-image: url('/pictures/768/768_05.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 5;
+    grid-row: span 2;
+    background-position: 100%;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no15{
+    background-image: url('/pictures/768/768_06.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 8;
+    grid-row: span 2;
+    background-origin: initial;
+    background-position-y: 100%;
+    background-position: 100%;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4; 
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no16{
+    background-image: url('/pictures/768/768_07.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 4;
+    grid-row: span 2;
+    background-position: 100%;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no17{
+    background-image: url('/pictures/768/768_08.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 2;
+    background-position: 100%;
+    background-position-y: 100%;
+    @include tablet{
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no18{
+    background-image: url('/pictures/768/768_09.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 2;
+    background-position: 100%;
+    background-position-y: 100%;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+}
+
+///third box
+.gallery__picture--no19{
+    background-image: url('/pictures/newPictures/768_08.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 3;
+    @include tablet{
+        grid-column: span 5;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 5;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no20{
+    background-image: url('/pictures/newPictures/768_09.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 3;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no21{
+    background-image: url('/pictures/newPictures/768_10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 12;
+    grid-row: span 3;
+    background-position: 100%;
+    background-position-y: 100%;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+  
+    
+
+    
+}
+.gallery__picture--no22{
+    background-image: url('/pictures/newPictures/768_11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 7;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+
+.gallery__picture--no23{
+    background-image: url('/pictures/newPictures/768_12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 5;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no24{
+    background-image: url('/pictures/newPictures/768_13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 8;
+    grid-row: span 2;
+    background-origin: initial;
+    background-position-y: 100%;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no25{
+    background-image: url('/pictures/newPictures/768_14.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 4;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no26{
+    background-image: url('/pictures/newPictures/768_26.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no27{
+    background-image: url('/pictures/newPictures/768_27.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+        
+    }
+}
+
+///// fourth box///////////
+.gallery__picture--no28{
+    background-image: url('/pictures/newPictures/768_17.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 3;
+    @include tablet{
+        grid-column: span 5;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 5;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no29{
+    background-image: url('/pictures/newPictures/768_18.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 3;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no30{
+    background-image: url('/pictures/newPictures/768_19.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 12;
+    grid-row: span 3;
+    background-position: 100%;
+    background-position-y: 100%;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+  
+    
+
+    
+}
+.gallery__picture--no31{
+    background-image: url('/pictures/newPictures/768_20.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 7;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+
+.gallery__picture--no32{
+    background-image: url('/pictures/newPictures/768_21.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 5;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no33{
+    background-image: url('/pictures/newPictures/768_22.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 8;
+    grid-row: span 2;
+    background-origin: initial;
+    background-position-y: 100%;
+    @include tablet{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no34{
+    background-image: url('/pictures/newPictures/768_23.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 4;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no35{
+    background-image: url('/pictures/newPictures/768_24.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+}
+.gallery__picture--no36{
+    background-image: url('/pictures/newPictures/768_25.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 6;
+    grid-row: span 2;
+    @include tablet{
+        grid-column: span 3;
+        grid-row: span 4;
+    }
+    @include desktop{
+        grid-column: span 3;
+        grid-row: span 4;
+        
+    }
+}

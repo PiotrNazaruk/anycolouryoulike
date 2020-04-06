@@ -1,0 +1,106 @@
+.footer{
+    height: 20vh;
+    position: relative;
+    z-index: 1000;
+    background: rgb(43, 40, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include small-phone{
+        height: 20vh;
+    }
+    @include phone-landscape{
+        height: 50vh;
+    }
+    @include tablet{
+        height: 25vh;
+    }
+    @include desktop{
+        height: 18vh;
+    }
+    @include desktop-1440{
+        height: 20vh;
+    }
+}
+.footer__container{
+    height: 90%;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+
+}
+.footer__container-list{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    @include desktop{
+        height: 70%;
+    }
+    li{
+        color: whitesmoke;
+        @include desktop-1440{
+            font-size: 1.5rem;
+        }
+
+    }
+}
+a[href^="tel:"] {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  a[href^="mailto:"] {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+.footer__container-icon{
+    height: 30%;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    @include phone-landscape{
+        height: 20%;
+    }
+   a{
+       width: 20%;
+   }
+   @include small-phone{
+       height: 30%;
+   }
+    @include phone-landscape{
+        width: 25%;
+    }
+    @include tablet{
+        width: 25%;
+        height: 20%;
+
+    }
+    @include desktop{
+        width: 15%;
+        height: 25%;
+    }
+  
+}
+.fab{
+    height: 100%;
+    width: 100%;
+    color: white;
+    @include desktop-1440{
+        
+    }
+}
+.author{
+    position: absolute;
+    right: 1%;
+    top: 70%;
+    color: whitesmoke;
+    p{
+        font-size: .7rem;
+        
+        @include desktop-1440{
+            font-size: 1.5rem;
+        }
+    }
+}

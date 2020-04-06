@@ -1,0 +1,309 @@
+.wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+.up-anchor{
+    width: 3rem;
+    height: 5rem;
+    position: fixed;
+    z-index: 1200;
+    right: 1%;
+    bottom: 30%;
+    border: .1rem solid rgba(3, 3, 3, 0.205);
+    opacity: 0;
+    transition: all 1s ease;
+    
+}
+.shw{
+    opacity: 1;
+}
+.photo-cover{
+    position: absolute;
+    height: 15rem;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    z-index: 100 !important;
+    background: rgba(255, 255, 255, 0.6);
+    @include desktop-1440{
+        height: 19rem;
+    }
+  
+   
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px !important;
+    overflow: hidden !important;
+    left: calc(-50vw + 50%);
+    right: calc(-50vw + 50%);
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+
+      .header__photo{
+          position: relative;
+          height: 8rem;
+          width: 19rem;
+          background-image: url('/pictures/39164328_303269997100775_1529952262338641920_n.png');
+          background-size: cover;
+          background-repeat: no-repeat;  
+          z-index: 101 !important;
+          
+
+          @include tablet{
+            width: 25rem;
+            height: 13rem;
+          }
+          @include desktop{
+              width: 30rem;
+              height: 13rem;
+              
+          }
+          @include desktop-1440{
+            width: 35rem;
+            height: 17rem;
+          }
+      }
+
+     &:after{
+         content: '';
+         position: absolute;
+         z-index: -1;
+         left: 0;
+         bottom: 0;
+     }
+     &:before{
+         content: '';
+         width: 100%;
+         height: 100%;
+         position: absolute;
+
+         top: 0;
+         left: 0;
+         z-index: 100;
+         background-image: url('/pictures/hero1800x120001.jpg');
+         background-size: cover;
+         background-position-x: center;
+         background-repeat: no-repeat;
+         filter: brightness(110%);
+             max-width: 1600px;
+             overflow: hidden;
+
+           @include phone-landscape{
+               
+            background-image: url('/pictures/hero1800x120001.jpg');
+           } 
+           @include tablet{
+            background-image: url('/pictures/hero1800x120001.jpg');
+           }
+           @include desktop{
+            animation: increase 30s linear 20ms infinite;
+            background-image: url('/pictures/hero1800x120001.jpg');
+            background-attachment: fixed;
+            backface-visibility: hidden;
+            transform: translateZ(0) scale(1.0,1.0);
+            background-size: 100% 100vh;
+            transition: all 0.2s ease-in-out;
+            z-index: -2;
+           }
+         
+         
+     }
+   
+    
+        h1{
+            position: absolute;
+            top: 40%;
+            transform: translateX(50%);
+            display: block;
+            display: flex;
+            flex-direction: column;
+            
+                &::before{
+
+                    content: '';
+                    display: block;
+                    background: black;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 0.1rem;
+                    width: 100%;
+                    opacity: 0.3;
+
+                }
+        }
+    }
+
+.nav__icon{
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 5%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1999;
+    @include desktop{
+        left: 2%;
+    }
+           
+   
+       
+    .nav__icon-item{
+          
+            text-align: center;
+            display: block;
+            width: 1.8rem;
+            height: 0.2rem;
+            background: black;
+            margin: 0.1rem 0;
+      
+            }
+        }
+.active span:nth-last-child(1){
+    position: absolute;
+    transform: rotate(45deg);
+    transition: .5s;
+    background: white;
+}
+.active span:nth-last-child(3){
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: .5s;
+    background: white;
+}
+.active span:nth-last-child(2){
+    display: none;
+}
+
+nav{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+    left: -100%;
+    background: black;
+    opacity: 0.90;
+
+    top: 0;
+    @include tablet{
+        width: 30%;
+
+    }
+    @include desktop{
+       width: 30%;
+    }
+  
+   
+    
+        ul{
+            list-style-type: none;
+                li{
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 1.5rem;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    
+                  
+                    
+                        a{
+                            text-decoration: none;
+                            list-style-type: none;
+                            color: white;
+                            opacity: 0;
+                          
+                        }
+                }
+        }
+}
+.open-close{
+    left: 0;
+    transition: 0.5s;
+   
+  
+}
+.black{
+    background: white !important;
+    color: red;
+   
+}
+.navigation__logo{
+    display: block;
+    height: 7rem;
+    width: 15rem;
+    background-image: url('/pictures/White-mini.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+}
+.logo-anchor{
+    position: absolute;
+    top: -100%;
+    left: 0;
+   
+    
+}
+
+.file{
+    color: black;
+    height: 48%;
+    @include small-phone{
+        height: 60%;
+    }
+    @include phone-landscape{
+       height: 60%;
+    }
+    @include tablet{
+        height: 65%;
+    }
+    @include desktop{
+        height: 65%;
+    }
+    @include desktop-1440{
+        height: 55%;
+    }
+    @include desktop-1900{
+        height: 45%;
+    }
+    @include desktop-2500{
+        height: 45%;
+    }
+}
+@keyframes increase{
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.3)
+    }
+    80%{
+        transform: scale(1.2)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
